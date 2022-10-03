@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:background="@drawable/nobackground">
+
+     <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="@color/gyae"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/list"
+            android:background="@drawable/iconunder">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:text="Hello,"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:paddingStart="30dp"
+            android:text="Users"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="130dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:cardMaxElevation="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:focusable="true"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:id="@+id/start1"
+                android:orientation="vertical"
+                android:elevation="100dp"
+                android:background="@drawable/internalbg">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="@color/yellow"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:id="@+id/light"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/bulb2"
+                        android:background="@drawable/track">
+                    </ImageView>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/aclonica"
+                    android:lines="2"
+                    android:text="Lighting"
+                    android:textColor="@color/highlight"
+                    android:textSize="25sp">
+
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="lamp"
+                    android:lines="2"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="-30dp"
+                    android:textSize="20sp">
+
+                </TextView>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/Switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginStart="45dp"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    app:showText="true"
+                    android:textOff="off"
+                    android:textOn="on"/>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:cardMaxElevation="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:id="@+id/start2"
+                android:orientation="vertical"
+                android:elevation="100dp"
+                android:background="@drawable/internalbg">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardBackgroundColor="@color/yellow"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:id="@+id/light1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/bulb1"
+                        android:background="@drawable/track">
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/aclonica"
+                    android:lines="2"
+                    android:text="Lighting"
+                    android:textColor="@color/highlight"
+                    android:textSize="25sp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="lamp"
+                    android:lines="2"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="-30dp"
+                    android:textSize="20sp">
+
+                </TextView>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/Switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginStart="45dp"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:thumb="@drawable/thumb"
+                    app:track="@drawable/track"
+                    app:showText="true"
+                    android:textOff="off"
+                    android:textOn="on"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/start3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/internalbg"
+        android:elevation="100dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/fan"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="-50dp"
+            app:lottie_rawRes="@raw/fan" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-280dp"
+            android:fontFamily="@font/aclonica"
+            android:lines="2"
+            android:text="Power"
+            android:textColor="@color/black"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/Switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="-120dp"
+            android:layout_marginTop="-20dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:textOff="off"
+            android:textOn="on"
+            android:thumb="@drawable/thumb"
+            app:showText="true"
+            app:track="@drawable/track" />
+
+
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="0"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="150dp"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <SeekBar
+            android:id="@+id/Sk"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:progress="10"
+            android:progressDrawable="@drawable/seebarbg"
+            android:progressTint="@color/white"
+            android:thumbTint="@color/black" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
